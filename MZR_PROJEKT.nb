@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    419103,      11769]
-NotebookOptionsPosition[    410001,      11483]
-NotebookOutlinePosition[    410444,      11500]
-CellTagsIndexPosition[    410401,      11497]
+NotebookDataLength[    424738,      11918]
+NotebookOptionsPosition[    415468,      11628]
+NotebookOutlinePosition[    415920,      11645]
+CellTagsIndexPosition[    415877,      11642]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -367,10 +367,16 @@ elementi ",
 dr\[ZHacek]i za neki ",
  Cell[BoxData[
   FormBox["n", TraditionalForm]]],
+ ", na primer za ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", "5"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
  "."
 }], "Text",
  CellChangeTimes->{{3.595246038220437*^9, 3.595246473505669*^9}, {
-  3.595246525905964*^9, 3.595246531771102*^9}}],
+  3.595246525905964*^9, 3.595246531771102*^9}, {3.595593019305934*^9, 
+  3.5955930274209337`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -623,38 +629,42 @@ Cell[TextData[{
  Cell[BoxData[
   FormBox[
    RowBox[{"p", "(", "x", ")"}], TraditionalForm]]],
- " skontruira njegovo pridru\[ZHacek]eno matriko."
+ " skontruira njegovo pridru\[ZHacek]eno matriko. Naredimo dva primera."
 }], "Text",
- CellChangeTimes->{{3.595253205235278*^9, 3.595253322411089*^9}}],
+ CellChangeTimes->{{3.595253205235278*^9, 3.595253322411089*^9}, {
+  3.595592644759304*^9, 3.595592660803095*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[{
- RowBox[{"testna", "=", 
-  RowBox[{"CompanionMatrix", "[", 
-   RowBox[{
+ RowBox[{
+  RowBox[{"testna", "=", 
+   RowBox[{"CompanionMatrix", "[", 
     RowBox[{
-     SubscriptBox["a", "0"], "+", 
      RowBox[{
-      SubscriptBox["a", "1"], "x"}], "+", 
-     RowBox[{
-      SubscriptBox["a", "2"], 
-      SuperscriptBox["x", "2"]}], "+", 
-     RowBox[{
-      SubscriptBox["a", "3"], 
-      SuperscriptBox["x", "3"]}]}], ",", "x"}], 
-   "]"}]}], "\[IndentingNewLine]", 
- RowBox[{"testna2", " ", "=", " ", 
-  RowBox[{"CompanionMatrix", "[", 
-   RowBox[{
+      SubscriptBox["a", "0"], "+", 
+      RowBox[{
+       SubscriptBox["a", "1"], "x"}], "+", 
+      RowBox[{
+       SubscriptBox["a", "2"], 
+       SuperscriptBox["x", "2"]}], "+", 
+      RowBox[{
+       SubscriptBox["a", "3"], 
+       SuperscriptBox["x", "3"]}]}], ",", "x"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"testna2", " ", "=", " ", 
+   RowBox[{"CompanionMatrix", "[", 
     RowBox[{
-     SubscriptBox["a", "0"], "+", 
      RowBox[{
-      SubscriptBox["a", "1"], "x"}], "+", 
-     RowBox[{
-      SubscriptBox["a", "2"], 
-      SuperscriptBox["x", "2"]}], "+", 
-     SuperscriptBox["x", "3"]}], ",", "x"}], "]"}]}], "\[IndentingNewLine]", 
+      SubscriptBox["a", "0"], "+", 
+      RowBox[{
+       SubscriptBox["a", "1"], "x"}], "+", 
+      RowBox[{
+       SubscriptBox["a", "2"], 
+       SuperscriptBox["x", "2"]}], "+", 
+      SuperscriptBox["x", "3"]}], ",", "x"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"testna", "//", "MatrixForm"}], "\[IndentingNewLine]", 
  RowBox[{"testna2", "//", "MatrixForm"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -664,51 +674,7 @@ Cell[BoxData[{
   3.593689698530047*^9, 3.593689715851499*^9}, {3.593689932268572*^9, 
   3.593690012056857*^9}, {3.59369006562023*^9, 3.593690081430236*^9}, {
   3.593690215646119*^9, 3.593690220985594*^9}, {3.593690907419059*^9, 
-  3.593690950037577*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"0", ",", "0", ",", 
-     RowBox[{"-", 
-      FractionBox[
-       SubscriptBox["a", "0"], 
-       SubscriptBox["a", "3"]]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "0", ",", 
-     RowBox[{"-", 
-      FractionBox[
-       SubscriptBox["a", "1"], 
-       SubscriptBox["a", "3"]]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"0", ",", "1", ",", 
-     RowBox[{"-", 
-      FractionBox[
-       SubscriptBox["a", "2"], 
-       SubscriptBox["a", "3"]]}]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.59369001282805*^9, 3.593690071776202*^9, 
-  3.593690109847845*^9, 3.593690221823778*^9, 3.593690950794573*^9, 
-  3.595256885135861*^9}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"0", ",", "0", ",", 
-     RowBox[{"-", 
-      SubscriptBox["a", "0"]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "0", ",", 
-     RowBox[{"-", 
-      SubscriptBox["a", "1"]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"0", ",", "1", ",", 
-     RowBox[{"-", 
-      SubscriptBox["a", "2"]}]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.59369001282805*^9, 3.593690071776202*^9, 
-  3.593690109847845*^9, 3.593690221823778*^9, 3.593690950794573*^9, 
-  3.595256885147581*^9}],
+  3.593690950037577*^9}, {3.595595654917247*^9, 3.595595657780533*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -743,7 +709,7 @@ Cell[BoxData[
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.59369001282805*^9, 3.593690071776202*^9, 
   3.593690109847845*^9, 3.593690221823778*^9, 3.593690950794573*^9, 
-  3.595256885151947*^9}],
+  3.595256885135861*^9, 3.5955956607378283`*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -772,7 +738,7 @@ Cell[BoxData[
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.59369001282805*^9, 3.593690071776202*^9, 
   3.593690109847845*^9, 3.593690221823778*^9, 3.593690950794573*^9, 
-  3.595256885155708*^9}]
+  3.595256885135861*^9, 3.5955956607428293`*^9}]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -1024,9 +990,10 @@ Cell[BoxData[{
           RowBox[{"1", "-", "a", "-", "x"}], ")"}]}], "-", "u"}]}]}], "]"}]}],
     "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"Resolve", "[", "izjava", "]"}], "\[IndentingNewLine]", 
- RowBox[{"ClearAll", "[", "izjava", "]"}]}], "Input",
+ RowBox[{
+  RowBox[{"ClearAll", "[", "izjava", "]"}], ";"}]}], "Input",
  CellChangeTimes->{{3.591765856958674*^9, 3.591765858101609*^9}, {
-  3.595253927535838*^9, 3.595253968498697*^9}}],
+   3.595253927535838*^9, 3.595253968498697*^9}, 3.595593163289934*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -1081,82 +1048,84 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"ForAll", "[", "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{"Evaluate", "[", 
-    RowBox[{"Join", "[", 
-     RowBox[{
-      RowBox[{"xs", "[", "3", "]"}], ",", 
-      RowBox[{"{", "a", "}"}], ",", 
-      RowBox[{"bs", "[", "3", "]"}]}], "]"}], "]"}], ",", 
-   "\[IndentingNewLine]", 
+ RowBox[{"izjava", "=", 
+  RowBox[{"ForAll", "[", "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{
-     RowBox[{"Plus", "@@", 
-      RowBox[{"xs", "[", "3", "]"}]}], "\[Equal]", "1"}], "&&", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{"And", "@@", 
-       RowBox[{"xs", "[", "3", "]"}]}], "/.", 
+    RowBox[{"Evaluate", "[", 
+     RowBox[{"Join", "[", 
       RowBox[{
-       SubscriptBox["x", "i_"], "\[Rule]", 
-       RowBox[{
-        SubscriptBox["x", "i"], ">", "0"}]}]}], ")"}], "&&", 
+       RowBox[{"xs", "[", "3", "]"}], ",", 
+       RowBox[{"{", "a", "}"}], ",", 
+       RowBox[{"bs", "[", "3", "]"}]}], "]"}], "]"}], ",", 
     "\[IndentingNewLine]", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{"And", "@@", 
-       RowBox[{"Subsets", "[", 
-        RowBox[{
-         RowBox[{"xs", "[", "3", "]"}], ",", 
-         RowBox[{"{", "2", "}"}]}], "]"}]}], "/.", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         SubscriptBox["x", "i_"], ",", 
-         SubscriptBox["x", "j_"]}], "}"}], "\[Rule]", 
-       RowBox[{
-        SubscriptBox["x", "i"], "\[NotEqual]", 
-        SubscriptBox["x", "j"]}]}]}], ")"}], "&&", "\[IndentingNewLine]", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{"And", "@@", 
-       RowBox[{"Rest", "[", 
-        RowBox[{"bs", "[", "3", "]"}], "]"}]}], "/.", 
-      RowBox[{
-       SubscriptBox["b", "j_"], "\[Rule]", 
-       RowBox[{"a", "\[NotEqual]", 
-        SubscriptBox["b", "j"]}]}]}], ")"}], "&&", "\[IndentingNewLine]", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{"And", "@@", 
-       RowBox[{"Subsets", "[", 
-        RowBox[{
-         RowBox[{"bs", "[", "3", "]"}], ",", 
-         RowBox[{"{", "2", "}"}]}], "]"}]}], "/.", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         SubscriptBox["b", "i_"], ",", 
-         SubscriptBox["b", "j_"]}], "}"}], "\[Rule]", 
-       RowBox[{
-        SubscriptBox["b", "i"], "\[NotEqual]", 
-        SubscriptBox["b", "j"]}]}]}], ")"}], "&&", "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"Plus", "@@", 
-      RowBox[{"Join", "[", 
-       RowBox[{
-        RowBox[{"{", "a", "}"}], ",", 
-        RowBox[{"bs", "[", "3", "]"}]}], "]"}]}], "\[Equal]", "1"}]}], ",", 
-   "\[IndentingNewLine]", 
-   RowBox[{"Exists", "[", 
-    RowBox[{
-     RowBox[{"Evaluate", "[", 
-      RowBox[{"us", "[", "3", "]"}], "]"}], ",", 
      RowBox[{
-      RowBox[{"p", "[", "3", "]"}], "\[Equal]", 
-      RowBox[{"q", "[", "3", "]"}]}]}], "]"}]}], "\[IndentingNewLine]", 
-  "]"}]], "Input"],
+      RowBox[{"Plus", "@@", 
+       RowBox[{"xs", "[", "3", "]"}]}], "\[Equal]", "1"}], "&&", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"And", "@@", 
+        RowBox[{"xs", "[", "3", "]"}]}], "/.", 
+       RowBox[{
+        SubscriptBox["x", "i_"], "\[Rule]", 
+        RowBox[{
+         SubscriptBox["x", "i"], ">", "0"}]}]}], ")"}], "&&", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"And", "@@", 
+        RowBox[{"Subsets", "[", 
+         RowBox[{
+          RowBox[{"xs", "[", "3", "]"}], ",", 
+          RowBox[{"{", "2", "}"}]}], "]"}]}], "/.", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          SubscriptBox["x", "i_"], ",", 
+          SubscriptBox["x", "j_"]}], "}"}], "\[Rule]", 
+        RowBox[{
+         SubscriptBox["x", "i"], "\[NotEqual]", 
+         SubscriptBox["x", "j"]}]}]}], ")"}], "&&", "\[IndentingNewLine]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"And", "@@", 
+        RowBox[{"Rest", "[", 
+         RowBox[{"bs", "[", "3", "]"}], "]"}]}], "/.", 
+       RowBox[{
+        SubscriptBox["b", "j_"], "\[Rule]", 
+        RowBox[{"a", "\[NotEqual]", 
+         SubscriptBox["b", "j"]}]}]}], ")"}], "&&", "\[IndentingNewLine]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"And", "@@", 
+        RowBox[{"Subsets", "[", 
+         RowBox[{
+          RowBox[{"bs", "[", "3", "]"}], ",", 
+          RowBox[{"{", "2", "}"}]}], "]"}]}], "/.", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          SubscriptBox["b", "i_"], ",", 
+          SubscriptBox["b", "j_"]}], "}"}], "\[Rule]", 
+        RowBox[{
+         SubscriptBox["b", "i"], "\[NotEqual]", 
+         SubscriptBox["b", "j"]}]}]}], ")"}], "&&", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Plus", "@@", 
+       RowBox[{"Join", "[", 
+        RowBox[{
+         RowBox[{"{", "a", "}"}], ",", 
+         RowBox[{"bs", "[", "3", "]"}]}], "]"}]}], "\[Equal]", "1"}]}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Exists", "[", 
+     RowBox[{
+      RowBox[{"Evaluate", "[", 
+       RowBox[{"us", "[", "3", "]"}], "]"}], ",", 
+      RowBox[{
+       RowBox[{"p", "[", "3", "]"}], "\[Equal]", 
+       RowBox[{"q", "[", "3", "]"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.595593168277934*^9, 3.595593171812934*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -1240,86 +1209,12 @@ Cell[BoxData[
  CellChangeTimes->{3.591765900800342*^9, 3.595150950844904*^9}]
 }, Closed]],
 
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{"Timing", "[", 
-  RowBox[{"Resolve", "[", 
-   RowBox[{"ForAll", "[", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"Evaluate", "[", 
-      RowBox[{"Join", "[", 
-       RowBox[{
-        RowBox[{"xs", "[", "3", "]"}], ",", 
-        RowBox[{"Join", "[", 
-         RowBox[{
-          RowBox[{"{", "a", "}"}], ",", 
-          RowBox[{"bs", "[", "3", "]"}]}], "]"}]}], "]"}], "]"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"Plus", "@@", 
-        RowBox[{"xs", "[", "3", "]"}]}], "\[Equal]", "1"}], "&&", 
-      RowBox[{"(", 
-       RowBox[{
-        RowBox[{"And", "@@", 
-         RowBox[{"xs", "[", "3", "]"}]}], "/.", 
-        RowBox[{
-         SubscriptBox["x", "i_"], "\[Rule]", 
-         RowBox[{
-          SubscriptBox["x", "i"], ">", "0"}]}]}], ")"}], "&&", 
-      RowBox[{"(", 
-       RowBox[{
-        RowBox[{"And", "@@", 
-         RowBox[{"Subsets", "[", 
-          RowBox[{
-           RowBox[{"xs", "[", "3", "]"}], ",", 
-           RowBox[{"{", "2", "}"}]}], "]"}]}], "/.", 
-        RowBox[{
-         RowBox[{"{", 
-          RowBox[{
-           SubscriptBox["x", "i_"], ",", 
-           SubscriptBox["x", "j_"]}], "}"}], "\[Rule]", 
-         RowBox[{
-          SubscriptBox["x", "i"], "\[NotEqual]", 
-          SubscriptBox["x", "j"]}]}]}], ")"}], "&&", "\[IndentingNewLine]", 
-      RowBox[{"(", 
-       RowBox[{
-        RowBox[{"And", "@@", 
-         RowBox[{"Rest", "[", 
-          RowBox[{"bs", "[", "3", "]"}], "]"}]}], "/.", 
-        RowBox[{
-         SubscriptBox["b", "j_"], "\[Rule]", 
-         RowBox[{"a", "\[NotEqual]", 
-          SubscriptBox["b", "j"]}]}]}], ")"}], "&&", "\[IndentingNewLine]", 
-      RowBox[{"(", 
-       RowBox[{
-        RowBox[{"And", "@@", 
-         RowBox[{"Subsets", "[", 
-          RowBox[{
-           RowBox[{"bs", "[", "3", "]"}], ",", 
-           RowBox[{"{", "2", "}"}]}], "]"}]}], "/.", 
-        RowBox[{
-         RowBox[{"{", 
-          RowBox[{
-           SubscriptBox["b", "i_"], ",", 
-           SubscriptBox["b", "j_"]}], "}"}], "\[Rule]", 
-         RowBox[{
-          SubscriptBox["b", "i"], "\[NotEqual]", 
-          SubscriptBox["b", "j"]}]}]}], ")"}], "&&", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Plus", "@@", 
-        RowBox[{"Join", "[", 
-         RowBox[{
-          RowBox[{"{", "a", "}"}], ",", 
-          RowBox[{"bs", "[", "3", "]"}]}], "]"}]}], "\[Equal]", "1"}]}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Exists", "[", 
-      RowBox[{
-       RowBox[{"Evaluate", "[", 
-        RowBox[{"us", "[", "3", "]"}], "]"}], ",", 
-       RowBox[{
-        RowBox[{"p", "[", "3", "]"}], "\[Equal]", 
-        RowBox[{"q", "[", "3", "]"}]}]}], "]"}]}], "\[IndentingNewLine]", 
-    "]"}], "]"}], "]"}]], "Input"],
+  RowBox[{"Resolve", "[", "izjava", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ClearAll", "[", "izjava", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.595593183064934*^9, 3.5955931990309343`*^9}}],
 
 Cell["\<\
 Zgornji izra\[CHacek]un traja predolgo. Preverjanje sem prekinil.\
@@ -1526,12 +1421,12 @@ Iskanje re\[SHacek]itve z uporabo Reduce\
 
 Cell["\<\
 Ker se zgornji na\[CHacek]in ne obrodi sadov, poizkusimo druga\[CHacek]e. Ker \
-sumimo, da zgornji na\[CHacek]in ni deloval v vi\[SHacek]jih dimenzija, ker \
+sumimo, da zgornji na\[CHacek]in ni deloval v vi\[SHacek]jih dimenzijah, ker \
 smo podali preve\[CHacek] pogojev, poizkusimo sedaj z zmanj\[SHacek]anjem \
 \[SHacek]tevila neena\[CHacek]b in ena\[CHacek]b, ki morajo veljati.\
 \>", "Text",
  CellChangeTimes->{{3.59525509595179*^9, 3.595255134682967*^9}, {
-  3.595255173117091*^9, 3.595255284610152*^9}}],
+   3.595255173117091*^9, 3.595255284610152*^9}, 3.5955932724349337`*^9}],
 
 Cell[CellGroupData[{
 
@@ -1783,7 +1678,8 @@ pravi, da mora biti ",
    RowBox[{
     SubscriptBox["b", "1"], "\[NotEqual]", " ", 
     SubscriptBox["b", "2"]}], TraditionalForm]]],
- ", kar smo pravtako predpostavili. Ker to dvoje velja, lahko najdemo iskana ",
+ ", kar smo prav tako predpostavili. Ker to dvoje velja, lahko najdemo iskana \
+",
  Cell[BoxData[
   FormBox[
    RowBox[{
@@ -1792,8 +1688,8 @@ pravi, da mora biti ",
  "."
 }], "Text",
  CellChangeTimes->{{3.591766717957545*^9, 3.591766736868912*^9}, {
-  3.595165381692945*^9, 3.595165382809435*^9}, {3.595255354206637*^9, 
-  3.595255544662431*^9}}]
+   3.595165381692945*^9, 3.595165382809435*^9}, {3.595255354206637*^9, 
+   3.595255544662431*^9}, 3.595593344488227*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2919,7 +2815,7 @@ izra\[CHacek]unamo iskane ",
 }], "Text",
  CellChangeTimes->{{3.591767886462873*^9, 3.591767909823405*^9}, {
   3.595257844222837*^9, 3.595257930796161*^9}}]
-}, Closed]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -2938,14 +2834,14 @@ Cell[TextData[{
   3.595253505759131*^9, 3.595253515337038*^9}}],
 
 Cell[TextData[{
- "Poglejmo si najprej primer, ko je matrika diagonalna, tj A=diag(a,a,...,a). \
-V tem primeru je matrika jasno hermitska s sledjo tr(A) = n\[CenterDot] a >0. \
-Sledi, da je a > 0 in zato \[ZHacek]e A pozitivna.\n\[CapitalCHacek]e pa \
-matrika A ni diagonalna, ima Jordansko dekompozicijo v kateri nastopa vsaj \
-ena kletka velikosti vsaj 2 (ima torej enice na naddiagonali). Podobno kot \
-zgoraj sledi, da je a > 0 in zato lahko matriko A razcepimo na dva sumanda. \
-Prvi je diag(a/(n+1), 2a/(n+1),...,na/(n+1)) in je o\[CHacek]itno pozitivna \
-matrika, drugi sumand pa je",
+ "Poglejmo si najprej primer, ko je matrika diagonalna, tj. \
+A=diag(a,a,...,a). V tem primeru je matrika jasno hermitska s sledjo tr(A) = \
+n\[CenterDot] a >0. Sledi, da je a > 0 in zato \[ZHacek]e A pozitivna.\n\
+\[CapitalCHacek]e pa matrika A ni diagonalna, ima Jordansko dekompozicijo v \
+kateri nastopa vsaj ena kletka velikosti vsaj 2 (ima torej enice na \
+naddiagonali). Podobno kot zgoraj sledi, da je a > 0 in zato lahko matriko A \
+razcepimo na dva sumanda. Prvi je diag(a/(n+1), 2a/(n+1),...,na/(n+1)) in je \
+o\[CHacek]itno pozitivna matrika, drugi sumand pa je",
  StyleBox[" [diag(na/n+1), (n-1)a/(n+1), ..., a/(n+1)) + ", "InlineFormula"],
  StyleBox[Cell[BoxData[
   FormBox[
@@ -2970,13 +2866,13 @@ primeru razcep torej obstaja.\nNaredimo \[SHacek]e primer takega razcepa za \
 matriko dimenzije ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"5", "\[Cross]", "5"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"5", "\[Cross]", "5"}], TraditionalForm]]],
  " z dvema kletkama velikosti 2 in eno kletko velikosti 1."
 }], "Text",
  CellChangeTimes->{{3.59179655036686*^9, 3.591796998737913*^9}, {
-  3.591797029082119*^9, 3.591797127653837*^9}, {3.595258140199912*^9, 
-  3.59525814422103*^9}, {3.59525819839355*^9, 3.595258255334559*^9}}],
+   3.591797029082119*^9, 3.591797127653837*^9}, {3.595258140199912*^9, 
+   3.59525814422103*^9}, {3.59525819839355*^9, 3.595258255334559*^9}, 
+   3.5955935960183773`*^9}],
 
 Cell[CellGroupData[{
 
@@ -3115,7 +3011,266 @@ Cell[BoxData[
 }, Open  ]],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
- CellChangeTimes->{3.595258408735597*^9}]
+ CellChangeTimes->{3.595258408735597*^9}],
+
+Cell["\<\
+Ta premislek lahko \[SHacek]e malo posplo\[SHacek]imo.\
+\>", "Text",
+ CellChangeTimes->{{3.5955934949502716`*^9, 3.5955935173745136`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Komentar o matrikah dimenzije ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ki imajo pozitivno sled in same pozitivne lastne vrednosti"
+}], "Section",
+ CellChangeTimes->{{3.5955877984545603`*^9, 3.59558788626534*^9}}],
+
+Cell[TextData[{
+ "Naj bo ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " kvadratna matrika dimenzije ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ki ima pozitivno sled in same pozitivne lastne vrednosti. Naj bo ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \[SHacek]e v Jordanski obliki. \[CapitalCHacek]e je ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " diagonalna, je \[ZHacek]e sama pozitivna. Denimo, da ni diagonalizabilna. \
+Potem ima ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " v Jordanski dekompoziciji vsaj eno kletko velikosti vsaj dve. Trdim, da \
+tudi tako matriko ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " lahko zapi\[SHacek]emo kot vsoto dveh matrik podobnih pozitivnim matrikam. \
+To naredimo tako, da ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " najprej zapi\[SHacek]emo kot vsoto dveh matrik ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"X", ",", "Y"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", da je ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "ij"], "=", 
+    RowBox[{
+     SubscriptBox["y", "ij"], "=", 
+     FractionBox[
+      SubscriptBox["a", "ij"], "2"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"X", ",", "Y"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " imata neni\[CHacek]elne elemente kve\[CHacek]jemu na diagonali in prvi \
+naddiagonali). Sedaj pa izberemo taka nenegativna \[SHacek]tevila ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Epsilon]", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", da so v mno\[ZHacek]icih ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["x", "ii"], "-", 
+      SubscriptBox["\[Epsilon]", "1"]}], ",", 
+     RowBox[{
+      SubscriptBox["x", "22"], "-", 
+      SubscriptBox["\[Epsilon]", "2"]}], ",", "\[Ellipsis]", ",", 
+     RowBox[{
+      SubscriptBox["x", "nn"], "-", 
+      SubscriptBox["\[Epsilon]", "n"]}]}], "}"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["y", "11"], "+", 
+      SubscriptBox["\[Epsilon]", "1"]}], ",", "\[Ellipsis]", ",", 
+     RowBox[{
+      SubscriptBox["y", "nn"], "+", 
+      SubscriptBox["\[Epsilon]", "n"]}]}], "}"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " sama paroma razli\[CHacek]na pozitivna \[SHacek]tevila. Potem opazujemo \
+matriki ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"X", "-", 
+    RowBox[{"diag", "(", 
+     RowBox[{
+      SubscriptBox["\[Epsilon]", "1"], ",", "\[Ellipsis]", ",", 
+      SubscriptBox["\[Epsilon]", "n"]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"Y", "+", 
+    RowBox[{"diag", "(", 
+     RowBox[{
+      SubscriptBox["\[Epsilon]", "1"], ",", "\[Ellipsis]", ",", 
+      SubscriptBox["\[Epsilon]", "n"]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Ker smo ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Epsilon]", "1"], ",", "\[Ellipsis]", ",", 
+     SubscriptBox["\[Epsilon]", "n"]}], "}"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " izbrali tako, da so diagonalci obeh matrik sama razli\[CHacek]na pozitivna \
+\[SHacek]tevila in ker so to ravno lastne vrednosti matrik ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"X", ",", "Y"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", to pomeni, da sta ti dve matriki diagonalizabilni s samimi \
+razli\[CHacek]nimi pozitivnimi lastnimi vrednostmi, torej sta podobni \
+pozitivnim matrikam.\nVpra\[SHacek]anje je le, \[CHacek]e lahko vedno najdemo \
+ustrezne elemente ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Epsilon]", "1"], ",", "\[Ellipsis]", ",", 
+    SubscriptBox["\[Epsilon]", "n"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". To pa velja, ker imamo le kon\[CHacek]no mnogo razli\[CHacek]nih \
+\[SHacek]tevil ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     SubscriptBox["a", "11"], "2"], ",", "\[Ellipsis]", ",", 
+    FractionBox[
+     SubscriptBox["a", "kk"], "2"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in zato lahko okrog vsakega najdemo interval (simetri\[CHacek]en glede na \
+izbrano to\[CHacek]ko ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    SubscriptBox["a", "ii"], "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "), ki ne bo vseboval nobene druge to\[CHacek]ke ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    SubscriptBox["a", "jj"], "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in ne bo sekal nobenega drugega tako dobljenega intervala. \
+\[CapitalCHacek]e ozna\[CHacek]imo z ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["r", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " polmer izbranega intervala in z ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "i"], " "}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\[SHacek]tevilo ponovitev diagonalnega elementa ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    SubscriptBox["a", "ii"], "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", potem lahko za perturbacijske koeficiente ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Epsilon]", "*"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ki pripadajo diagonanemu elementu ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    SubscriptBox["a", "ii"], "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", izberemo kar ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["n", "i"], "+", "1"}]], 
+     SubscriptBox["r", "i"]}], ",", "\[Ellipsis]", ",", 
+    RowBox[{
+     FractionBox[
+      SubscriptBox["n", "i"], 
+      RowBox[{
+       SubscriptBox["n", "i"], "+", "1"}]], 
+     SubscriptBox["r", "i"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Po konstrukciji sledi, da vsi perturbirani elementi paroma \
+razli\[CHacek]ni med seboj. Preveriti moramo le \[SHacek]e, da so vsi \
+pozitivni. Ker jih lahko linearno uredimo, zado\[SHacek]\[CHacek]a zahtevati, \
+da je ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["r", "1"], "<", 
+    FractionBox[
+     SubscriptBox["a", "11"], "2"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", kjer je ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    SubscriptBox["a", "11"], "2"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " najmanj\[SHacek]i diagonalec. V tem primeru so namre\[CHacek] vsi \
+intervali okrog \[SHacek]tevil ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     SubscriptBox["a", "11"], "2"], ",", "\[Ellipsis]", ",", 
+    FractionBox[
+     SubscriptBox["a", "kk"], "2"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " pod intervalom ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{"0", ",", "\[Infinity]"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.595587894025116*^9, 3.595587957060419*^9}, {
+   3.5955881828469954`*^9, 3.5955882896756773`*^9}, 3.595588323557065*^9, {
+   3.595588381094818*^9, 3.595588856894393*^9}, {3.5955888925899625`*^9, 
+   3.5955889663413367`*^9}, {3.595588997746477*^9, 3.595589162264927*^9}, {
+   3.59558919630033*^9, 3.5955894195246506`*^9}, {3.595589539889686*^9, 
+   3.595589576798376*^9}, {3.5955898643041773`*^9, 3.5955901257623205`*^9}, {
+   3.5955901616829123`*^9, 3.595590259287672*^9}, {3.595590328199562*^9, 
+   3.5955905160183425`*^9}, {3.5955905586366034`*^9, 3.595590674981237*^9}, {
+   3.595590735770315*^9, 3.595590876762413*^9}, {3.5955909069784346`*^9, 
+   3.595590936765413*^9}, {3.5955909736391*^9, 3.5955909928870244`*^9}}]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -3123,6 +3278,34 @@ Cell[CellGroupData[{
 Cell["Problem za matrike dimenzije 2", "Section",
  CellChangeTimes->{{3.595387918261913*^9, 3.59538791947591*^9}, {
   3.595387956426838*^9, 3.595387963488405*^9}}],
+
+Cell[TextData[{
+ "Pri obravnavanju nadaljnih primerov (tudi pri ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "=", "3"}], ",", "4"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") si bomo pomagali s podobnim premislekom kot zgoraj. Dano matriko ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " bomo poizkusili zapisati kot vsoto dveh matrik, ki bosta imeli \
+karakteristi\[CHacek]ni polinom enak polinomu ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", "[", "n", "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (definiran na za\[CHacek]etku). \[CapitalCHacek]e bomo za ni\[CHacek]le \
+polinoma ",
+ Cell[BoxData[
+  FormBox["p", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " izbrali paroma razli\[CHacek]na pozitivna \[SHacek]tevila s primerno \
+vsoto, potem bosta oba sumanda imela same razli\[CHacek]ne pozitivne lastne \
+vrednosti in bosta zato podobna isti strogo pozitivni matriki."
+}], "Text",
+ CellChangeTimes->{{3.595595892639016*^9, 3.595596114050155*^9}}],
 
 Cell[CellGroupData[{
 
@@ -3204,22 +3387,21 @@ Cell[TextData[{
  "Ob predpostavki, da imata obe matriki pozitivno sled, sledi, da ju lahko \
 zapi\[SHacek]emo na \[ZHacek]eljeni na\[CHacek]in. To velja, ker \
 zado\[SHacek]\[CHacek]ata pogojem izreka o diagonalizabilnih matrikah \
-dimnzije ",
+dimenzije ",
  Cell[BoxData[
-  FormBox["n", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["n", TraditionalForm]]],
  " z vsaj ",
  Cell[BoxData[
   FormBox[
    RowBox[{"(", 
-    RowBox[{"n", "-", "1"}], ")"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
- " razli\[CHacek]nimi lastnimi vrednostmi. Izrek smo dimezijo 2 preverili \
+    RowBox[{"n", "-", "1"}], ")"}], TraditionalForm]]],
+ " razli\[CHacek]nimi lastnimi vrednostmi. Izrek smo za dimezijo 2 preverili \
 \[ZHacek]e zgoraj."
 }], "Text",
  CellChangeTimes->{{3.595388159891548*^9, 3.595388294331612*^9}, 
    3.595388549951285*^9, {3.595388757003348*^9, 3.595388854431809*^9}, {
-   3.595388899644577*^9, 3.595388914807417*^9}}]
+   3.595388899644577*^9, 3.595388914807417*^9}, 3.595593586714447*^9, {
+   3.5955936857423487`*^9, 3.5955936860143757`*^9}}]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -3294,11 +3476,12 @@ Cell["Problem za matrike dimenzije 3", "Section",
   3.591796485393368*^9, 3.591796486677235*^9}}],
 
 Cell["\<\
-Obravnavali bomo vse primere matrik dimenzije 3 in za vsa pokazali, da se jih \
+Obravnavali bomo vse primere matrik dimenzije 3 in za vse pokazali, da se jih \
 da zapisati kot vsoto dveh matrik podobnih pozitivnim matrikam. Uporabljali \
 bomo podobne tehnike kot do sedaj.\
 \>", "Text",
- CellChangeTimes->{{3.595258830207703*^9, 3.595258909335697*^9}}],
+ CellChangeTimes->{{3.595258830207703*^9, 3.595258909335697*^9}, {
+  3.59559372855963*^9, 3.5955937288316574`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -3444,7 +3627,7 @@ lastnimi vrednostmi.\
 \>", "Text",
  CellChangeTimes->{{3.591797374100716*^9, 3.591797448151115*^9}}]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -3824,31 +4007,29 @@ Cell[BoxData[
 }, Closed]],
 
 Cell[TextData[{
- "Uporabimo isti nastavek kot zgoraj, le da elemnt 1, ki pripada kletki \
+ "Uporabimo isti nastavek kot zgoraj, le da element 1, ki pripada kletki \
 velikosti 2, razdelimo med oba sumanda. Preverimo, da sta karakteristi\
-\[CHacek]na polinoma obeh sumndov enaka. Z uporabo Reduce poi\[SHacek]\
+\[CHacek]na polinoma obeh sumandov enaka. Z uporabo Reduce poi\[SHacek]\
 \[CHacek]emo pogoje na ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"u", ",", "v"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"u", ",", "v"}], TraditionalForm]]],
  ", da bo karakteristi\[CHacek]ni polinom matrike X enak ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"p", "[", "3", "]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"p", "[", "3", "]"}], TraditionalForm]]],
  ". Vidimo, da taka ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"u", ",", "v"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"u", ",", "v"}], TraditionalForm]]],
  " lahko dolo\[CHacek]imo, prvi pogoj je namre\[CHacek] pogoj na sledi matrik \
 in je izpolnjen."
 }], "Text",
  CellChangeTimes->{{3.595259746398968*^9, 3.59525980506959*^9}, {
-  3.595259892874657*^9, 3.595260033870265*^9}}]
+  3.595259892874657*^9, 3.595260033870265*^9}, {3.5955937968994637`*^9, 
+  3.595593808604634*^9}, {3.595593931648937*^9, 3.595593941209893*^9}}]
 }, Closed]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -4020,16 +4201,17 @@ Cell[BoxData[
 }, Open  ]],
 
 Cell["\<\
-Primera, ko ima matrikaeno samo lastno vrednost nam po zgornjem premisleku ni \
-potrebno obravnavati. Podobno nam po izreku iz \[CHacek]lanka ni potrebno \
+Primera, ko ima matrika eno samo lastno vrednost nam po zgornjem premisleku \
+ni potrebno obravnavati. Podobno nam po izreku iz \[CHacek]lanka ni potrebno \
 obravnavati primera, ko ima tri ali \[SHacek]tiri razli\[CHacek]ne lastne \
 vrednosti (smo \[ZHacek]e preverili, da se takrat matriko da razcepiti na \
-\[ZHacek]elejni na\[CHacek]in). Sklenemo, da nam ostane za obravnavati le \
+\[ZHacek]eljeni na\[CHacek]in). Sklenemo, da nam ostane za obravnavati le \
 \[SHacek]e mo\[ZHacek]nost, ko ima le dve razli\[CHacek]ni lastni vrednosti. \
 Lo\[CHacek]imo dve primera.\
 \>", "Text",
  CellChangeTimes->{{3.591799915658541*^9, 3.59180002958186*^9}, {
-  3.595261419583571*^9, 3.595261477619801*^9}}],
+  3.595261419583571*^9, 3.595261477619801*^9}, {3.595593989171689*^9, 
+  3.595594002996071*^9}}],
 
 Cell[CellGroupData[{
 
@@ -6101,110 +6283,91 @@ Cell[TextData[{
  "Ker \[ZHacek]elimo posnemati postopek, ki smo ga uporabili pri diagonalnih ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"n", "\[Cross]", "n"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"n", "\[Cross]", "n"}], TraditionalForm]]],
  " matrikah z vsaj ",
  Cell[BoxData[
   FormBox[
    RowBox[{"(", 
-    RowBox[{"n", "-", "1"}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    RowBox[{"n", "-", "1"}]}], TraditionalForm]]],
  ") razli\[CHacek]nimi diagonalci, diagonalo sumandov perturbiramo tako, da \
-imata sumanda na diagonali same razli\[CHacek]ne elemente. S tem pokvarimo \
-enakost njunih karakteristi\[CHacek]nih polinomov, zato najprej poi\[SHacek]\
-\[CHacek]emo pogoje na elemente ",
+imata sumanda na diagonali ve\[CHacek] razli\[CHacek]nih elementov. S tem \
+pokvarimo enakost njunih karakteristi\[CHacek]nih polinomov, zato najprej poi\
+\[SHacek]\[CHacek]emo pogoje na elemente ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["u", "i"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["u", "i"], TraditionalForm]]],
  ", da bosta karakteristi\[CHacek]na polinoma sumandov ",
  Cell[BoxData[
-  FormBox["X", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["X", TraditionalForm]]],
  " in ",
  Cell[BoxData[
-  FormBox["Y", TraditionalForm]],
-  FormatType->"TraditionalForm"],
- " enaka. Dobimo pogoj, da mora velajti ",
+  FormBox["Y", TraditionalForm]]],
+ " enaka. Dobimo pogoj, da mora veljati ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["u", "2"], "=", 
-    SubscriptBox["u", "3"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SubscriptBox["u", "3"]}], TraditionalForm]]],
  ". Upo\[SHacek]tevamo ta pogoj. Nato opazujemo koeficiente karakteristi\
 \[CHacek]nega polinoma matrike ",
  Cell[BoxData[
-  FormBox["X", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["X", TraditionalForm]]],
  " in polinoma ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"p", "[", "4", "]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"p", "[", "4", "]"}], TraditionalForm]]],
  ". Ker sta oba polinoma moni\[CHacek]na, se njuna koeficienta pri ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["x", "4"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SuperscriptBox["x", "4"], TraditionalForm]]],
  "ujemata. Ker imamo predpostavko na sled, se ujemata tudi koeficienta pri \
 potenci ",
  Cell[BoxData[
   FormBox[
-   SuperscriptBox["x", "3"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SuperscriptBox["x", "3"], TraditionalForm]]],
  ". Preostale parametre moramo nastaviti tako, da bo veljala enakost \
 \[SHacek]e med koeficienti pri ",
  Cell[BoxData[
   FormBox[
    RowBox[{
-    SuperscriptBox["x", "2"], ",", "x", ",", "1"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SuperscriptBox["x", "2"], ",", "x", ",", "1"}], TraditionalForm]]],
  ". Ko opazujemo koeficiente, opazimo, da lahko iz ena\[CHacek]b pri ",
  Cell[BoxData[
   FormBox[
    RowBox[{"x", ",", 
-    SuperscriptBox["x", "2"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SuperscriptBox["x", "2"]}], TraditionalForm]]],
  "dobimo ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["u", "1"], ",", 
-    SubscriptBox["u", "2"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SubscriptBox["u", "2"]}], TraditionalForm]]],
  " (opazimo, da iz predpostavk sledi, da je determinanta sistema \
 neni\[CHacek]elna). Storimo to in ugotovljeno upo\[SHacek]tevamo v preostali \
 ena\[CHacek]bi pri koeficientu ",
  Cell[BoxData[
-  FormBox["1", TraditionalForm]],
-  FormatType->"TraditionalForm"],
- ". Iz te ena\[CHacek]be pa potem poiukusimo dolo\[CHacek]iti \[SHacek]e \
+  FormBox["1", TraditionalForm]]],
+ ". Iz te ena\[CHacek]be pa potem poizkusimo dolo\[CHacek]iti \[SHacek]e \
 ustrezen ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"\[Delta]", "."}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"\[Delta]", "."}], TraditionalForm]]],
  " Dobimo pogoj, da mora biti ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     RowBox[{"1", "-", 
-     RowBox[{"4", "b"}]}], "\[NotEqual]", "0"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+     RowBox[{"4", "b"}]}], "\[NotEqual]", "0"}], TraditionalForm]]],
  ", kar je ekvivalentno na\[SHacek]i predpostavki, da je ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"a", "\[NotEqual]", "b"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"a", "\[NotEqual]", "b"}], TraditionalForm]]],
  ". Za ",
  Cell[BoxData[
-  FormBox["\[Delta]", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["\[Delta]", TraditionalForm]]],
  " pa dobimo \[SHacek]tiri mo\[ZHacek]nosti, hkrati pa mora biti ",
  Cell[BoxData[
-  FormBox["\[Delta]", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["\[Delta]", TraditionalForm]]],
  " neni\[CHacek]elen. \[CapitalCHacek]e je katerakoli izmed \[SHacek]tirih \
 ponujenih mo\[ZHacek]nosti za \[Delta] pri dani matriki neni\[CHacek]elna, \
 potem za izbrani \[Delta] lahko dolo\[CHacek]imo ",
@@ -6212,20 +6375,16 @@ potem za izbrani \[Delta] lahko dolo\[CHacek]imo ",
   FormBox[
    RowBox[{
     SubscriptBox["u", "1"], ",", 
-    SubscriptBox["u", "2"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SubscriptBox["u", "2"]}], TraditionalForm]]],
  " s pomo\[CHacek]jo katerih lahko matriko ",
  Cell[BoxData[
-  FormBox["A", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["A", TraditionalForm]]],
  " zapi\[SHacek]emo kot vsoto matrik ",
  Cell[BoxData[
-  FormBox["X", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["X", TraditionalForm]]],
  " in ",
  Cell[BoxData[
-  FormBox["Y", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["Y", TraditionalForm]]],
  ", ki sta v tem primeru podobni diagonalni strogo pozitivni matriki ",
  Cell[BoxData[
   FormBox[
@@ -6233,26 +6392,25 @@ potem za izbrani \[Delta] lahko dolo\[CHacek]imo ",
     RowBox[{"{", 
      RowBox[{
       SubscriptBox["x", "1"], ",", "\[Ellipsis]", ",", 
-      SubscriptBox["x", "n"]}], "}"}], "]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+      SubscriptBox["x", "n"]}], "}"}], "]"}], TraditionalForm]]],
  ", kjer so ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["x", "i"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["x", "i"], TraditionalForm]]],
  " poljubni pozitivni paroma razli\[CHacek]ni  vnaprej izbrani elementi z \
 vsoto enako ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     RowBox[{"2", "a"}], "+", 
-    RowBox[{"2", "b"}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    RowBox[{"2", "b"}]}], TraditionalForm]]],
  "."
 }], "Text",
  CellChangeTimes->{{3.595261793616911*^9, 3.59526205837248*^9}, {
   3.595262093229965*^9, 3.595262272017268*^9}, {3.595262315711735*^9, 
-  3.595262549138018*^9}, {3.595262589112718*^9, 3.59526310830619*^9}}]
+  3.595262549138018*^9}, {3.595262589112718*^9, 3.59526310830619*^9}, {
+  3.595594117233494*^9, 3.5955941412108912`*^9}, {3.595594203299099*^9, 
+  3.59559420370614*^9}}]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -6904,71 +7062,62 @@ perturbiramo diagonalce, da postanejo razli\[CHacek]ni, nato pa spet dolo\
 \[CHacek]imo pogoj na elemente ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["u", "i"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["u", "i"], TraditionalForm]]],
  ", da sta karakteristi\[CHacek]na polinoma sumandov enaka. Ta pogoj je zopet \
 ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["u", "3"], "=", 
-    SubscriptBox["u", "2"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SubscriptBox["u", "2"]}], TraditionalForm]]],
  ". Upo\[SHacek]tevamo ga. Zopet zado\[SHacek]\[CHacek]a opazovati ena\
 \[CHacek]be za koeficiente le pri ",
  Cell[BoxData[
   FormBox[
    RowBox[{"1", ",", "x", ",", 
-    SuperscriptBox["x", "2"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SuperscriptBox["x", "2"]}], TraditionalForm]]],
  " (preostali dve sta izpolnjeni zaradi na\[SHacek]ih predpostavk). Opazimo, \
 da lahko iz ena\[CHacek]b pri ",
  Cell[BoxData[
   FormBox[
    RowBox[{"1", ",", 
-    SuperscriptBox["x", "2"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SuperscriptBox["x", "2"]}], TraditionalForm]]],
  " izrazimo ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["u", "1"], ",", 
-    SubscriptBox["u", "2"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
- " (determinanta sistema je spet neni\[CHacek]elna zarai na\[SHacek]ih \
+    SubscriptBox["u", "2"]}], TraditionalForm]]],
+ " (determinanta sistema je spet neni\[CHacek]elna zaradi na\[SHacek]ih \
 predpostavk). Izra\[ZHacek]avo za ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["u", "1"], ",", 
-    SubscriptBox["u", "2"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SubscriptBox["u", "2"]}], TraditionalForm]]],
  " upo\[SHacek]tevamo v preostali ena\[CHacek]bi pri koeficientu ",
  Cell[BoxData[
-  FormBox["x", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["x", TraditionalForm]]],
  ". Poizkusimo jo re\[SHacek]iti na ",
  Cell[BoxData[
-  FormBox["\[Delta]", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["\[Delta]", TraditionalForm]]],
  ". Dobimo dva pogoja, ki sta  izpolnjena zaradi na\[SHacek]ih predpostavk. \
 Prvi je namre\[CHacek] ravno pogoj na sled, drugi pa je pogoj, da je ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"a", "\[NotEqual]", "b"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"a", "\[NotEqual]", "b"}], TraditionalForm]]],
  ". \[CapitalCHacek]e je katerakoli izmed mo\[ZHacek]nosti za \[Delta] neni\
 \[CHacek]elna (\[CHacek]e je ena neni\[CHacek]elna, je tudi druga, saj sta le \
 razli\[CHacek]no predzna\[CHacek]eni), potem lahko na enak na\[CHacek]in kot \
 zgoraj pridemo do ustreznega razcepa matrike ",
  Cell[BoxData[
-  FormBox["A", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["A", TraditionalForm]]],
  "."
 }], "Text",
  CellChangeTimes->{{3.595163954503069*^9, 3.595163971838813*^9}, {
-  3.595164119348733*^9, 3.595164180000127*^9}, {3.595263217454177*^9, 
-  3.59526363530704*^9}, {3.595263684719574*^9, 3.595263787099267*^9}}]
+   3.595164119348733*^9, 3.595164180000127*^9}, {3.595263217454177*^9, 
+   3.59526363530704*^9}, {3.595263684719574*^9, 3.595263787099267*^9}, 
+   3.5955942837611446`*^9}]
 }, Closed]]
 }, Closed]],
 
@@ -9320,7 +9469,7 @@ Cell[BoxData[
    RowBox[{"zgoraj", ".", " ", "Diagonalne"}], " ", "elemente", " ", 
    "sumandov", " ", "zmotimo"}], ",", " ", "tako", ",", " ", 
   RowBox[{
-  "da", " ", "dobimo", " ", "sumanda", " ", "s", " ", "samimi", " ", 
+  "da", " ", "dobimo", " ", "sumanda", " ", "z", " ", "ve\[CHacek]", " ", 
    "razli\[CHacek]nimi", " ", "diagonalnimi", " ", 
    RowBox[{"elementi", ".", " ", "Poi\[SHacek]\[CHacek]emo"}], " ", "pogoj"}],
    ",", " ", 
@@ -9453,7 +9602,7 @@ Cell[BoxData[
    3.5953083024702673`*^9, 3.5953084343342667`*^9}, {3.5953084690762672`*^9, 
    3.5953084871952667`*^9}, {3.595308641358763*^9, 3.5953087027129326`*^9}, {
    3.595324531748241*^9, 3.595324543762084*^9}, {3.595324725394083*^9, 
-   3.595324725855267*^9}}],
+   3.595324725855267*^9}, {3.5955943633451023`*^9, 3.595594365502318*^9}}],
 
 Cell[CellGroupData[{
 
@@ -11426,8 +11575,7 @@ Cell[TextData[{
  "Za vse matrike (razen za ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"4", "\[Cross]", "4"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"4", "\[Cross]", "4"}], TraditionalForm]]],
  " matrike s pozitivno sledjo in dvema razli\[CHacek]nima lastnima \
 vrednostima, ki nastopata v Jordanskih kletkah dimenzije 2) dimenzije najve\
 \[CHacek] 4 smo uspeli poiskati pogoje, pri katerih lahko matriko zapi\
@@ -11436,12 +11584,10 @@ polinom. \[CapitalCHacek]e smo morali diagonalce sumandov pri tem \
 perturbirati in lahko perturbacijski koeficient, ki smo ga ozna\[CHacek]evali \
 z ",
  Cell[BoxData[
-  FormBox["\[Epsilon]", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["\[Epsilon]", TraditionalForm]]],
  " oziroma ",
  Cell[BoxData[
-  FormBox["\[Delta]", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["\[Delta]", TraditionalForm]]],
  " izberemo neni\[CHacek]elen, potem je karakteristi\[CHacek]ni polinom obeh \
 sumandov enak polinomu ",
  Cell[BoxData[
@@ -11457,35 +11603,34 @@ sumandov enak polinomu ",
        SubscriptBox["x", "2"]}], ")"}], 
      RowBox[{"\[CenterEllipsis]", "(", 
       RowBox[{"x", "-", 
-       SubscriptBox["x", "n"]}], ")"}]}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+       SubscriptBox["x", "n"]}], ")"}]}]}], TraditionalForm]]],
  ", kjer je ",
  Cell[BoxData[
-  FormBox["n", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["n", TraditionalForm]]],
  " dimenzija matrike. \[CapitalCHacek]e torej za ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["x", "1"], ",", "\[Ellipsis]", ",", 
-    SubscriptBox["x", "n"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SubscriptBox["x", "n"]}], TraditionalForm]]],
  " izberemo paroma razli\[CHacek]na pozitivna \[SHacek]tevila z vsoto enako \
 polovici sledi prvotne matrike, potem dobimo razcep matrike na dve matriki, \
 ki sta podobni pozitivnim matrikam. Zgoraj omenjena izjema pa je \
 nederogatorna, torej jo po izreku lahko zapi\[SHacek]emo v \[ZHacek]eljeni \
-obliki."
+obliki.\nZa vi\[SHacek]je dimenzije problem postane ra\[CHacek]unsko \
+prezahteven."
 }], "Text",
  CellChangeTimes->{{3.595387184831475*^9, 3.595387343553068*^9}, {
   3.595387377069845*^9, 3.59538738982641*^9}, {3.595387430119627*^9, 
-  3.595387493736437*^9}, {3.595387532795249*^9, 3.595387868391019*^9}}]
+  3.595387493736437*^9}, {3.595387532795249*^9, 3.595387868391019*^9}, {
+  3.5955961525680065`*^9, 3.5955962910858574`*^9}}]
 }, Open  ]]
 },
 WindowSize->{828, 850},
-WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowMargins->{{2, Automatic}, {Automatic, -7}},
 PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
 Magnification:>0.75 Inherited,
-FrontEndVersion->"9.0 for Linux x86 (32-bit) (January 25, 2013)",
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -11499,277 +11644,281 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 4855, 125, 361, "Text"],
-Cell[5415, 147, 551, 9, 23, "Text"],
-Cell[5969, 158, 3790, 116, 299, "Input",
+Cell[557, 20, 4855, 125, 338, "Text"],
+Cell[5415, 147, 551, 9, 24, "Text"],
+Cell[5969, 158, 3790, 116, 286, "Input",
  InitializationCell->True],
-Cell[9762, 276, 3120, 96, 191, "Text"],
+Cell[9762, 276, 3298, 102, 129, "Text"],
 Cell[CellGroupData[{
-Cell[12907, 376, 4194, 117, 246, "Input"],
-Cell[17104, 495, 624, 9, 4, "Output"],
-Cell[17731, 506, 1516, 37, 21, "Output"],
-Cell[19250, 545, 1696, 45, 21, "Output"],
-Cell[20949, 592, 628, 9, 4, "Output"],
-Cell[21580, 603, 628, 9, 4, "Output"]
+Cell[13085, 382, 4194, 117, 212, "Input"],
+Cell[17282, 501, 624, 9, 3, "Output"],
+Cell[17909, 512, 1516, 37, 15, "Output"],
+Cell[19428, 551, 1696, 45, 15, "Output"],
+Cell[21127, 598, 628, 9, 3, "Output"],
+Cell[21758, 609, 628, 9, 3, "Output"]
 }, Closed]],
-Cell[22223, 615, 389, 12, 22, "Text"],
+Cell[22401, 621, 460, 13, 23, "Text"],
 Cell[CellGroupData[{
-Cell[22637, 631, 1296, 35, 98, "Input"],
-Cell[23936, 668, 717, 23, 9, "Output"],
-Cell[24656, 693, 558, 17, 4, "Output"],
-Cell[25217, 712, 1086, 33, 22, "Output"],
-Cell[26306, 747, 921, 27, 14, "Output"]
+Cell[22886, 638, 1402, 38, 95, "Input"],
+Cell[24291, 678, 1110, 33, 72, "Output"],
+Cell[25404, 713, 945, 27, 101, "Output"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[27264, 779, 487, 14, 67, "Section"],
-Cell[27754, 795, 5402, 150, 222, "Text"],
+Cell[26386, 745, 487, 14, 75, "Section"],
+Cell[26876, 761, 5402, 150, 203, "Text"],
 Cell[CellGroupData[{
-Cell[33181, 949, 230, 5, 33, "Subsection"],
-Cell[33414, 956, 446, 8, 8, "Text"],
+Cell[32303, 915, 230, 5, 36, "Subsection"],
+Cell[32536, 922, 446, 8, 41, "Text"],
 Cell[CellGroupData[{
-Cell[33885, 968, 117, 1, 6, "Subsubsection"],
-Cell[34005, 971, 140, 3, 4, "Input"],
+Cell[33007, 934, 117, 1, 30, "Subsubsection"],
+Cell[33127, 937, 140, 3, 24, "Input"],
 Cell[CellGroupData[{
-Cell[34170, 978, 1731, 50, 21, "Input"],
-Cell[35904, 1030, 1133, 38, 6, "Output"],
-Cell[37040, 1070, 142, 2, 4, "Output"]
+Cell[33292, 944, 1772, 51, 96, "Input"],
+Cell[35067, 997, 1133, 38, 25, "Output"],
+Cell[36203, 1037, 142, 2, 23, "Output"]
 }, Closed]],
-Cell[37197, 1075, 140, 3, 4, "Input"],
+Cell[36360, 1042, 140, 3, 20, "Input"],
 Cell[CellGroupData[{
-Cell[37362, 1082, 2503, 76, 37, "Input"],
-Cell[39868, 1160, 2386, 79, 9, "Output"]
+Cell[36525, 1049, 2672, 78, 167, "Input"],
+Cell[39200, 1129, 2386, 79, 6, "Output"]
 }, Closed]],
-Cell[42269, 1242, 2752, 79, 32, "Input"],
-Cell[45024, 1323, 204, 4, 4, "Text"]
+Cell[41601, 1211, 253, 5, 38, "Input"],
+Cell[41857, 1218, 204, 4, 24, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[45265, 1332, 140, 3, 4, "Subsubsection"],
-Cell[45408, 1337, 732, 22, 8, "Text"],
-Cell[46143, 1361, 2856, 85, 41, "Input",
+Cell[42098, 1227, 140, 3, 26, "Subsubsection"],
+Cell[42241, 1232, 732, 22, 41, "Text"],
+Cell[42976, 1256, 2856, 85, 184, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[49024, 1450, 156, 3, 9, "Input"],
-Cell[49183, 1455, 1343, 46, 6, "Output"],
-Cell[50529, 1503, 229, 6, 4, "Output"]
+Cell[45857, 1345, 156, 3, 42, "Input"],
+Cell[46016, 1350, 1343, 46, 4, "Output"],
+Cell[47362, 1398, 229, 6, 3, "Output"]
 }, Closed]],
-Cell[50773, 1512, 148, 3, 4, "Text"]
+Cell[47606, 1407, 148, 3, 23, "Text"]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[50970, 1521, 136, 3, 28, "Subsection"],
-Cell[51109, 1526, 440, 7, 39, "Text"],
+Cell[47803, 1416, 136, 3, 31, "Subsection"],
+Cell[47942, 1421, 466, 7, 41, "Text"],
 Cell[CellGroupData[{
-Cell[51574, 1537, 160, 2, 27, "Subsubsection"],
+Cell[48433, 1432, 160, 2, 30, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[51759, 1543, 1020, 31, 76, "Input"],
-Cell[52782, 1576, 580, 20, 24, "Output"]
+Cell[48618, 1438, 1020, 31, 76, "Input"],
+Cell[49641, 1471, 580, 20, 23, "Output"]
 }, Open  ]],
-Cell[53377, 1599, 374, 9, 25, "Text"],
+Cell[50236, 1494, 374, 9, 24, "Text"],
 Cell[CellGroupData[{
-Cell[53776, 1612, 1243, 36, 76, "Input"],
-Cell[55022, 1650, 3717, 123, 117, "Output"]
+Cell[50635, 1507, 1243, 36, 76, "Input"],
+Cell[51881, 1545, 3717, 123, 85, "Output"]
 }, Open  ]],
-Cell[58754, 1776, 713, 19, 41, "Text"]
+Cell[55613, 1671, 740, 20, 41, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[59504, 1800, 140, 3, 27, "Subsubsection"],
-Cell[59647, 1805, 1194, 33, 12, "Text"],
-Cell[60844, 1840, 1357, 36, 33, "Input",
+Cell[56390, 1696, 140, 3, 30, "Subsubsection"],
+Cell[56533, 1701, 1194, 33, 57, "Text"],
+Cell[57730, 1736, 1357, 36, 144, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[62226, 1880, 176, 3, 4, "Input"],
-Cell[62405, 1885, 726, 23, 4, "Output"]
+Cell[59112, 1776, 176, 3, 24, "Input"],
+Cell[59291, 1781, 726, 23, 23, "Output"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[63168, 1913, 845, 22, 20, "Input"],
-Cell[64016, 1937, 2115, 73, 13, "Output"]
+Cell[60054, 1809, 845, 22, 89, "Input"],
+Cell[60902, 1833, 2115, 73, 9, "Output"]
 }, Closed]],
-Cell[66146, 2013, 500, 13, 9, "Text"],
+Cell[63032, 1909, 500, 13, 40, "Text"],
 Cell[CellGroupData[{
-Cell[66671, 2030, 1333, 37, 21, "Input"],
-Cell[68007, 2069, 157, 2, 4, "Output"],
-Cell[68167, 2073, 27386, 830, 125, "Output"]
+Cell[63557, 1926, 1333, 37, 93, "Input"],
+Cell[64893, 1965, 157, 2, 23, "Output"],
+Cell[65053, 1969, 27386, 830, 383, "Output"]
 }, Closed]],
-Cell[95568, 2906, 524, 14, 9, "Text"]
-}, Closed]]
+Cell[92454, 2802, 524, 14, 40, "Text"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[96153, 2927, 353, 10, 89, "Section"],
-Cell[96509, 2939, 1794, 39, 31, "Text"],
+Cell[93039, 2823, 353, 10, 97, "Section"],
+Cell[93395, 2835, 1792, 39, 138, "Text"],
 Cell[CellGroupData[{
-Cell[98328, 2982, 1618, 49, 29, "Input"],
-Cell[99949, 3033, 2832, 80, 36, "Output"]
+Cell[95212, 2878, 1618, 49, 119, "Input"],
+Cell[96833, 2929, 2832, 80, 106, "Output"]
 }, Open  ]],
-Cell[102796, 3116, 87, 1, 9, "Input"]
+Cell[99680, 3012, 87, 1, 42, "Input"],
+Cell[99770, 3015, 148, 3, 24, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[102920, 3122, 163, 2, 39, "Section"],
-Cell[CellGroupData[{
-Cell[103108, 3128, 104, 1, 33, "Subsection"],
-Cell[103215, 3131, 266, 8, 23, "Text"],
-Cell[CellGroupData[{
-Cell[103506, 3143, 606, 17, 76, "Input"],
-Cell[104115, 3162, 1297, 37, 37, "Output"]
-}, Open  ]],
-Cell[105427, 3202, 767, 19, 39, "Text"]
+Cell[99955, 3023, 279, 7, 75, "Section"],
+Cell[100237, 3032, 8013, 240, 256, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[106231, 3226, 105, 1, 28, "Subsection"],
-Cell[106339, 3229, 143, 3, 23, "Text"],
+Cell[108287, 3277, 163, 2, 43, "Section"],
+Cell[108453, 3281, 1048, 26, 73, "Text"],
 Cell[CellGroupData[{
-Cell[106507, 3236, 497, 14, 59, "Input"],
-Cell[107007, 3252, 627, 18, 49, "Output"]
+Cell[109526, 3311, 104, 1, 36, "Subsection"],
+Cell[109633, 3314, 266, 8, 24, "Text"],
+Cell[CellGroupData[{
+Cell[109924, 3326, 606, 17, 76, "Input"],
+Cell[110533, 3345, 1297, 37, 33, "Output"]
 }, Open  ]],
-Cell[107649, 3273, 567, 12, 39, "Text"]
+Cell[111845, 3385, 781, 18, 41, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[112663, 3408, 105, 1, 31, "Subsection"],
+Cell[112771, 3411, 143, 3, 24, "Text"],
+Cell[CellGroupData[{
+Cell[112939, 3418, 497, 14, 59, "Input"],
+Cell[113439, 3434, 627, 18, 33, "Output"]
+}, Open  ]],
+Cell[114081, 3455, 567, 12, 41, "Text"]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[108265, 3291, 163, 2, 39, "Section"],
-Cell[108431, 3295, 282, 5, 39, "Text"],
+Cell[114697, 3473, 163, 2, 43, "Section"],
+Cell[114863, 3477, 332, 6, 41, "Text"],
 Cell[CellGroupData[{
-Cell[108738, 3304, 104, 1, 33, "Subsection"],
-Cell[108845, 3307, 738, 18, 39, "Text"],
+Cell[115220, 3487, 104, 1, 36, "Subsection"],
+Cell[115327, 3490, 738, 18, 41, "Text"],
 Cell[CellGroupData[{
-Cell[109608, 3329, 949, 27, 93, "Input"],
-Cell[110560, 3358, 2050, 58, 51, "Output"]
+Cell[116090, 3512, 949, 27, 93, "Input"],
+Cell[117042, 3541, 2050, 58, 45, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[112647, 3421, 145, 3, 27, "Subsubsection"],
-Cell[112795, 3426, 130, 3, 23, "Text"]
+Cell[119129, 3604, 145, 3, 30, "Subsubsection"],
+Cell[119277, 3609, 130, 3, 24, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[112962, 3434, 162, 3, 27, "Subsubsection"],
-Cell[113127, 3439, 259, 5, 23, "Text"]
+Cell[119444, 3617, 162, 3, 30, "Subsubsection"],
+Cell[119609, 3622, 259, 5, 24, "Text"]
 }, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[113435, 3450, 130, 2, 33, "Subsection"],
-Cell[113568, 3454, 330, 9, 4, "Text"],
-Cell[CellGroupData[{
-Cell[113923, 3467, 1313, 41, 21, "Input"],
-Cell[115239, 3510, 2049, 58, 11, "Output"]
-}, Open  ]],
-Cell[117303, 3571, 515, 9, 8, "Text"],
-Cell[CellGroupData[{
-Cell[117843, 3584, 3084, 92, 45, "Input"],
-Cell[120930, 3678, 2311, 68, 13, "Output"],
-Cell[123244, 3748, 171, 3, 4, "Output"],
-Cell[123418, 3753, 2310, 69, 15, "Output"]
-}, Closed]],
-Cell[125743, 3825, 892, 23, 11, "Text"]
-}, Closed]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[126684, 3854, 115, 1, 61, "Section"],
-Cell[126802, 3857, 282, 5, 39, "Text"],
-Cell[CellGroupData[{
-Cell[127109, 3866, 104, 1, 33, "Subsection"],
-Cell[127216, 3869, 203, 4, 4, "Text"],
-Cell[CellGroupData[{
-Cell[127444, 3877, 1378, 41, 29, "Input"],
-Cell[128825, 3920, 3512, 98, 22, "Output"]
-}, Open  ]],
-Cell[132352, 4021, 628, 10, 12, "Text"],
-Cell[CellGroupData[{
-Cell[133005, 4035, 207, 4, 6, "Subsubsection"],
-Cell[CellGroupData[{
-Cell[133237, 4043, 9774, 255, 90, "Input"],
-Cell[143014, 4300, 4426, 105, 15, "Output"],
-Cell[147443, 4407, 1954, 31, 4, "Output"],
-Cell[149400, 4440, 5442, 134, 29, "Output"],
-Cell[154845, 4576, 62558, 1520, 345, "Output"]
-}, Closed]],
-Cell[217418, 6099, 5177, 155, 47, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[222632, 6259, 186, 4, 4, "Subsubsection"],
+Cell[119917, 3633, 130, 2, 31, "Subsection"],
+Cell[120050, 3637, 330, 9, 24, "Text"],
 Cell[CellGroupData[{
-Cell[222843, 6267, 9562, 260, 94, "Input"],
-Cell[232408, 6529, 3643, 93, 15, "Output"],
-Cell[236054, 6624, 1170, 19, 4, "Output"],
-Cell[237227, 6645, 4440, 118, 27, "Output"],
-Cell[241670, 6765, 5218, 132, 38, "Output"]
+Cell[120405, 3650, 1313, 41, 93, "Input"],
+Cell[121721, 3693, 2049, 58, 45, "Output"]
+}, Open  ]],
+Cell[123785, 3754, 515, 9, 41, "Text"],
+Cell[CellGroupData[{
+Cell[124325, 3767, 3084, 92, 195, "Input"],
+Cell[127412, 3861, 2311, 68, 53, "Output"],
+Cell[129726, 3931, 171, 3, 23, "Output"],
+Cell[129900, 3936, 2310, 69, 58, "Output"]
 }, Closed]],
-Cell[246903, 6900, 2619, 70, 28, "Text"]
+Cell[132225, 4008, 892, 21, 56, "Text"]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[249571, 6976, 106, 1, 28, "Subsection"],
-Cell[249680, 6979, 208, 4, 23, "Text"],
+Cell[133166, 4035, 115, 1, 43, "Section"],
+Cell[133284, 4038, 282, 5, 41, "Text"],
 Cell[CellGroupData[{
-Cell[249913, 6987, 3616, 111, 195, "Input"],
-Cell[253532, 7100, 6206, 174, 130, "Output"]
+Cell[133591, 4047, 104, 1, 36, "Subsection"],
+Cell[133698, 4050, 203, 4, 24, "Text"],
+Cell[CellGroupData[{
+Cell[133926, 4058, 1378, 41, 127, "Input"],
+Cell[135307, 4101, 3512, 98, 57, "Output"]
 }, Open  ]],
-Cell[259753, 7277, 320, 6, 39, "Text"],
+Cell[138834, 4202, 678, 11, 57, "Text"],
 Cell[CellGroupData[{
-Cell[260098, 7287, 312, 6, 46, "Subsubsection"],
+Cell[139537, 4217, 207, 4, 30, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[260435, 7297, 10849, 295, 225, "Input"],
-Cell[271287, 7594, 2741, 78, 45, "Output"],
-Cell[274031, 7674, 334, 6, 9, "Output"],
-Cell[274368, 7682, 5450, 153, 50, "Output"],
-Cell[279821, 7837, 277, 3, 9, "Output"],
-Cell[280101, 7842, 55588, 1469, 551, "Output"]
+Cell[139769, 4225, 9774, 255, 365, "Input"],
+Cell[149546, 4482, 4426, 105, 11, "Output"],
+Cell[153975, 4589, 1954, 31, 3, "Output"],
+Cell[155932, 4622, 5442, 134, 21, "Output"],
+Cell[161377, 4758, 62558, 1520, 258, "Output"]
 }, Closed]],
-Cell[335704, 9314, 6728, 141, 156, "Text"],
-Cell[CellGroupData[{
-Cell[342457, 9459, 1959, 58, 38, "Input"],
-Cell[344419, 9519, 2591, 76, 43, "Output"]
-}, Open  ]],
-Cell[347025, 9598, 216, 4, 9, "Text"]
+Cell[223950, 6281, 4427, 131, 186, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[347278, 9607, 261, 5, 42, "Subsubsection"],
-Cell[347542, 9614, 271, 5, 9, "Text"],
+Cell[228414, 6417, 186, 4, 26, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[347838, 9623, 3096, 97, 81, "Input"],
-Cell[350937, 9722, 2496, 74, 35, "Output"],
-Cell[353436, 9798, 95, 1, 9, "Output"],
-Cell[353534, 9801, 7645, 218, 65, "Output"]
-}, Open  ]],
-Cell[361194, 10022, 976, 25, 22, "Text"]
+Cell[228625, 6425, 9562, 260, 382, "Input"],
+Cell[238190, 6687, 3643, 93, 57, "Output"],
+Cell[241836, 6782, 1170, 19, 23, "Output"],
+Cell[243009, 6803, 4440, 118, 83, "Output"],
+Cell[247452, 6923, 5218, 132, 133, "Output"]
 }, Closed]],
-Cell[CellGroupData[{
-Cell[362207, 10052, 217, 5, 23, "Subsubsection"],
-Cell[CellGroupData[{
-Cell[362449, 10061, 4118, 123, 262, "Input"],
-Cell[366570, 10186, 2442, 72, 31, "Output"],
-Cell[369015, 10260, 95, 1, 9, "Output"],
-Cell[369113, 10263, 130, 1, 9, "Output"],
-Cell[369246, 10266, 4925, 149, 65, "Output"]
-}, Closed]],
-Cell[374186, 10418, 1057, 29, 53, "Text"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[375280, 10452, 187, 4, 23, "Subsubsection"],
-Cell[375470, 10458, 634, 10, 28, "Text"],
-Cell[CellGroupData[{
-Cell[376129, 10472, 3724, 108, 103, "Input"],
-Cell[379856, 10582, 1011, 25, 31, "Output"],
-Cell[380870, 10609, 1215, 33, 11, "Output"],
-Cell[382088, 10644, 1523, 42, 34, "Output"],
-Cell[383614, 10688, 6575, 191, 60, "Output"]
+Cell[252685, 7058, 2320, 61, 121, "Text"]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[390238, 10885, 202, 4, 23, "Subsubsection"],
-Cell[390443, 10891, 280, 5, 39, "Text"],
+Cell[255054, 7125, 106, 1, 31, "Subsection"],
+Cell[255163, 7128, 208, 4, 24, "Text"],
 Cell[CellGroupData[{
-Cell[390748, 10900, 3867, 116, 246, "Input"],
-Cell[394618, 11018, 2495, 74, 75, "Output"],
-Cell[397116, 11094, 148, 3, 24, "Output"],
-Cell[397267, 11099, 184, 3, 24, "Output"],
-Cell[397454, 11104, 8648, 265, 192, "Output"]
+Cell[255396, 7136, 3616, 111, 195, "Input"],
+Cell[259015, 7249, 6206, 174, 57, "Output"]
+}, Open  ]],
+Cell[265236, 7426, 320, 6, 41, "Text"],
+Cell[CellGroupData[{
+Cell[265581, 7436, 312, 6, 30, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[265918, 7446, 10849, 295, 497, "Input"],
+Cell[276770, 7743, 2741, 78, 33, "Output"],
+Cell[279514, 7823, 334, 6, 6, "Output"],
+Cell[279851, 7831, 5450, 153, 37, "Output"],
+Cell[285304, 7986, 277, 3, 6, "Output"],
+Cell[285584, 7991, 55588, 1469, 413, "Output"]
 }, Closed]],
-Cell[406117, 11372, 1413, 39, 68, "Text"],
-Cell[407533, 11413, 92, 1, 24, "Input"]
+Cell[341187, 9463, 6781, 141, 357, "Text"],
+Cell[CellGroupData[{
+Cell[347993, 9608, 1959, 58, 93, "Input"],
+Cell[349955, 9668, 2591, 76, 89, "Output"]
+}, Open  ]],
+Cell[352561, 9747, 216, 4, 24, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[352814, 9756, 261, 5, 26, "Subsubsection"],
+Cell[353078, 9763, 271, 5, 24, "Text"],
+Cell[CellGroupData[{
+Cell[353374, 9772, 3096, 97, 195, "Input"],
+Cell[356473, 9871, 2496, 74, 73, "Output"],
+Cell[358972, 9947, 95, 1, 23, "Output"],
+Cell[359070, 9950, 7645, 218, 106, "Output"]
+}, Open  ]],
+Cell[366730, 10171, 976, 25, 57, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[367743, 10201, 217, 5, 26, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[367985, 10210, 4118, 123, 259, "Input"],
+Cell[372106, 10335, 2442, 72, 65, "Output"],
+Cell[374551, 10409, 95, 1, 23, "Output"],
+Cell[374649, 10412, 130, 1, 23, "Output"],
+Cell[374782, 10415, 4925, 149, 138, "Output"]
+}, Closed]],
+Cell[379722, 10567, 1057, 29, 56, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[380816, 10601, 187, 4, 26, "Subsubsection"],
+Cell[381006, 10607, 634, 10, 57, "Text"],
+Cell[CellGroupData[{
+Cell[381665, 10621, 3724, 108, 229, "Input"],
+Cell[385392, 10731, 1011, 25, 23, "Output"],
+Cell[386406, 10758, 1215, 33, 8, "Output"],
+Cell[387624, 10793, 1523, 42, 25, "Output"],
+Cell[389150, 10837, 6575, 191, 45, "Output"]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[395774, 11034, 202, 4, 26, "Subsubsection"],
+Cell[395979, 11040, 280, 5, 41, "Text"],
+Cell[CellGroupData[{
+Cell[396284, 11049, 3867, 116, 246, "Input"],
+Cell[400154, 11167, 2495, 74, 65, "Output"],
+Cell[402652, 11243, 148, 3, 23, "Output"],
+Cell[402803, 11248, 184, 3, 23, "Output"],
+Cell[402990, 11253, 8648, 265, 136, "Output"]
+}, Closed]],
+Cell[411653, 11521, 1413, 39, 72, "Text"],
+Cell[413069, 11562, 92, 1, 24, "Input"]
 }, Closed]]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[407686, 11421, 111, 1, 39, "Section"],
-Cell[407800, 11424, 2185, 56, 119, "Text"]
+Cell[413222, 11570, 111, 1, 43, "Section"],
+Cell[413336, 11573, 2116, 52, 122, "Text"]
 }, Open  ]]
 }
 ]
